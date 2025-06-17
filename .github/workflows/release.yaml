@@ -1,4 +1,4 @@
-name: Build and deploy
+name: Release prometheus-varnish-exporter
 on:
   push:
     tags:
@@ -20,7 +20,6 @@ jobs:
     name: Release the artifacts
     runs-on: ubuntu-latest
     needs: [setup]
-    if: github.event.base_ref == 'refs/heads/main'
     permissions:
       contents: write
     steps:
