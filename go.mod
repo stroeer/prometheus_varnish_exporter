@@ -1,6 +1,6 @@
 module github.com/jonnenauha/prometheus_varnish_exporter
 
-go 1.24
+go 1.24.4
 
 require github.com/prometheus/client_golang v1.22.0
 
